@@ -42,3 +42,24 @@ const calcul = (a, b) => {
     console.log('3');
     return a + b;
 };
+
+// Методы строк
+
+const logg = 'Hello world';
+
+console.log(logg.slice(6, 11)); // с какого символа по какой вырезать
+console.log(logg.slice(6)); //с этого символа и до конца
+console.log(logg.slice(-5, -1)); // с конца строки в начало
+
+console.log(logg.substring(6, 11)); // то же самое, только нельзя использовать отрицательные значения
+
+console.log(logg.substr(6, 5)); // говорит с какого символа и сколько нужно вырезать
+
+// Методы чисел
+
+const numb = 12.2;
+console.log(Math.round(numb)); // округление
+
+const test = '12.2px';
+console.log(parseInt(test)); // перевод в другую систему исчичления
+console.log(parseFloat(test)); // возвращение числа с плавающей точкой
