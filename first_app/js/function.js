@@ -43,6 +43,37 @@ const calcul = (a, b) => {
     return a + b;
 };
 
+// Callback function - функция которая должна выполниться после того как другая функция завершила свое выполнение
+
+function first() {
+    // Do something
+    setTimeout(function() {
+        console.log(1);
+    }, 500);
+}
+
+function second() {
+    console.log(2);
+}
+
+first();
+second();
+
+function learnJS(lang, callback) {
+    console.log(`Я учу: ${lang}`);
+    callback();
+}
+
+learnJS('JavaScript', function() {  // 1 variant
+    console.log('Я прошел этот урок!');
+});
+
+function done() {  // 2 variant
+    console.log('Я прошел этот урок!');
+}
+
+learnJS('JavaScript', done);
+
 // Методы строк
 
 const logg = 'Hello world';
