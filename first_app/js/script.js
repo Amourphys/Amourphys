@@ -74,8 +74,6 @@ const personalMovieDB = {
                 personalMovieDB.genres.sort();
             } */
 
-            
-
         }
 
         personalMovieDB.genres.forEach((item, i) => {
@@ -92,7 +90,7 @@ const personalMovieDB = {
       personalMovieDB.movies[a] = b;// лучше использовать [] чем .
       personalMovieDB.movies[c] = d; */
 
-
+// debagger; - устанавливается в нужных местах для отладки кода
 
 
 
